@@ -59,7 +59,9 @@
       }
     }
 
-    elem.mCustomScrollbar(config);
+    scope.$evalAsync(function () {
+      elem.mCustomScrollbar(config);
+    });
   }
 
   function ScrollBarsDirective(ScrollBars) {
